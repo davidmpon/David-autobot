@@ -13,7 +13,7 @@ module.exports.config = {
 
 module.exports.run = async function({ api, event, args }) {
 		if (!args[0]) {
-				api.sendMessage("Please provide a question or statement after 'hercai'. For example: hercai What is the capital of France?", event.threadID);
+				api.sendMessage("Please provide a question or statement after 'ai'. Que puis-je faire pour toi? ex: ai comment ça va ?", event.threadID);
 				return;
 		}
 
